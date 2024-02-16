@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="jQuery.js"></script>
+</head>
+<body>
+
+    <h1 class="display-6 text-center">Chat App</h1>
+
+    <section id="login" class="border mx-auto shadow p-2" style="width: 380px;">
+        <div class="d-grid gap-2">
+            <input class="form-control" type="text" id="username" placeholder="Username">
+            <button class="btn btn-dark" type="button" id="login-btn">Login</button>
+          </div>
+    </section>
+
+    <section id="chat-box" class="border mx-auto shadow p-2" style="width: 380px;">
+
+        <ul id="chat" class="overflow-auto ps-0" style="height: 300px;">
+        </ul>
+        <textarea class="form-control" rows="3" id="inp"></textarea>
+        <button class="btn btn-dark m-2 btn-sm" id="send-btn">Send</button>
+    </section>
+    
+
+    <!-- <script> this is a script tag wjeer all the code i written</script> -->
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
